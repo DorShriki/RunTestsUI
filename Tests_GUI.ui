@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1139</width>
+    <height>571</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background-color: rgb(61, 61, 61);
+}</string>
+  </property>
+  <widget class="QPushButton" name="select_folder">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>-10</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+   color: white;
+	border: 2px solid rgb(255, 217, 78);
+	border-radius: 5px; 
+}
+
+QPushButton:hover{
+   color: rgb(255, 217, 78);
+	border: 2px solid rgb(255, 217, 78);
+	border-radius: 5px; 
+}</string>
+   </property>
+   <property name="text">
+    <string>Select Folder</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="run_tests">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>-10</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+   color: white;
+	border: 2px solid rgb(255, 217, 78);
+	border-radius: 5px; 
+}
+
+QPushButton:hover{
+   color: rgb(255, 217, 78);
+	border: 2px solid rgb(255, 217, 78);
+	border-radius: 5px; 
+}</string>
+   </property>
+   <property name="text">
+    <string>Run</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QTreeWidget" name="tree_tests">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>201</width>
+     <height>511</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid rgb(255, 217, 78);
+border-radius: 20px;
+background-color: white;</string>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="logger">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>50</y>
+     <width>901</width>
+     <height>511</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid rgb(255, 217, 78);
+border-radius: 20px;
+background-color: white;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="log_results">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>-10</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+   color: white;
+	border: 2px solid rgb(255, 217, 78);
+	border-radius: 5px; 
+}
+
+QPushButton:hover{
+   color: rgb(255, 217, 78);
+	border: 2px solid rgb(255, 217, 78);
+	border-radius: 5px; 
+}</string>
+   </property>
+   <property name="text">
+    <string>results</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="stop_test">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>-10</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+   color: white;
+	border: 2px solid rgb(255, 217, 78);
+	border-radius: 5px; 
+}
+
+QPushButton:hover{
+   color: rgb(255, 217, 78);
+	border: 2px solid rgb(255, 217, 78);
+	border-radius: 5px; 
+}</string>
+   </property>
+   <property name="text">
+    <string>Stop</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clear_log">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>-10</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+   color: white;
+	border: 2px solid rgb(255, 217, 78);
+	border-radius: 5px; 
+}
+
+QPushButton:hover{
+   color: rgb(255, 217, 78);
+	border: 2px solid rgb(255, 217, 78);
+	border-radius: 5px; 
+}</string>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="check_all">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>520</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+   color: black;
+	border: 2px solid rgb(255, 217, 78);
+	border-radius: 20px; 
+}
+
+QPushButton:hover{
+   color: rgb(255, 217, 78);
+	border: 2px solid rgb(255, 217, 78);
+	border-radius: 20px; 
+}</string>
+   </property>
+   <property name="text">
+    <string>Check All</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
